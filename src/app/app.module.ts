@@ -7,6 +7,8 @@ import { ViewOnePageComponent } from './pages/view-one-page/view-one-page.compon
 import { ViewTwoPageComponent } from './pages/view-two-page/view-two-page.component';
 import { ViewThreePageComponent } from './pages/view-three-page/view-three-page.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { RouterModule } from '@angular/router';
+import { router } from './router/router';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,10 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     ViewOnePageComponent,
     ViewTwoPageComponent,
     ViewThreePageComponent,
-    NavBarComponent
+    NavBarComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, RouterModule.forRoot(router)],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
