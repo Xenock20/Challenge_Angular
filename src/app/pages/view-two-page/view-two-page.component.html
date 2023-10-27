@@ -1,35 +1,41 @@
-<igx-grid
-  #grid1
-  id="grid1"
-  [data]="data"
-  [autoGenerate]="true"
-  [allowFiltering]="true"
-  [filterMode]="'excelStyleFilter'"
->
-  <igx-grid-toolbar>
-    <igx-grid-toolbar-actions>
-      <igx-grid-toolbar-hiding></igx-grid-toolbar-hiding>
-    </igx-grid-toolbar-actions>
-  </igx-grid-toolbar>
-  <igx-column
-    field="ID"
-    header="ID"
-    [filterable]="true"
-    [sortable]="true"
-    [dataType]="'number'"
-  ></igx-column
-  ><igx-column
-    field="Name"
-    header="Name"
-    [filterable]="true"
-    [sortable]="true"
-    [dataType]="'string'"
-  ></igx-column>
-  <igx-column
-    field="Age"
-    header="Age"
-    [filterable]="true"
-    [sortable]="true"
-    [dataType]="'number'"
-  ></igx-column
-></igx-grid>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <igx-grid
+        #grid1
+        id="grid1"
+        [data]="data"
+        [autoGenerate]="false"
+        [allowFiltering]="true"
+        [filterMode]="'excelStyleFilter'"
+      >
+        <igx-grid-toolbar>
+          <igx-grid-toolbar-actions>
+            <igx-grid-toolbar-hiding></igx-grid-toolbar-hiding>
+          </igx-grid-toolbar-actions>
+        </igx-grid-toolbar>
+        <igx-column
+          field="ID"
+          header="ID"
+          [filterable]="true"
+          [sortable]="true"
+          [dataType]="'number'"
+        ></igx-column>
+        <igx-column
+          field="Name"
+          header="Name"
+          [filterable]="true"
+          [sortable]="true"
+          [dataType]="'string'"
+        ></igx-column>
+        <igx-column
+          field="Age"
+          header="Age"
+          [filterable]="true"
+          [sortable]="true"
+          [dataType]="'number'"
+        ></igx-column>
+      </igx-grid>
+    </div>
+  </div>
+</div>
