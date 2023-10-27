@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./view-three-page.component.css']
 })
 export class ViewThreePageComponent {
-
+  
 }

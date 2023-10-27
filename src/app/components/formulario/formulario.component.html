@@ -58,15 +58,17 @@
     />
   </div>
 
-  <button
-    type="submit"
-    class="btn btn-primary"
-    data-bs-toggle="modal"
-    data-bs-target="#exampleModal"
-    [disabled]="!isFormComplete"
-  >
-    Enviar
-  </button>
+  <div class="form-group m-3">
+    <button
+      type="submit"
+      class="btn btn-primary w-100"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+      [disabled]="!isFormComplete"
+    >
+      Enviar
+    </button>
+  </div>
 </form>
 
 <!-- Modal -->

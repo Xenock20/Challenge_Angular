@@ -10,9 +10,10 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { RouterModule } from '@angular/router';
 import { router } from './router/router';
 import { NgxMaskModule } from 'ngx-mask';
-import { IgxAvatarModule } from 'igniteui-angular';
+import { IgxGridModule, IgxButtonGroupModule } from 'igniteui-angular';
 import { FormularioComponent } from './components/formulario/formulario.component';
-import { ReactiveFormsModule } from "@angular/forms";
+import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -28,10 +29,13 @@ import { ReactiveFormsModule } from "@angular/forms";
     BrowserModule,
     RouterModule.forRoot(router),
     NgxMaskModule.forRoot(),
-    IgxAvatarModule,
-    ReactiveFormsModule
+    IgxGridModule,
+    IgxButtonGroupModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+}
