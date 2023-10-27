@@ -9,6 +9,10 @@ import { ViewThreePageComponent } from './pages/view-three-page/view-three-page.
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { RouterModule } from '@angular/router';
 import { router } from './router/router';
+import { NgxMaskModule } from 'ngx-mask';
+import { IgxAvatarModule } from 'igniteui-angular';
+import { FormularioComponent } from './components/formulario/formulario.component';
+import { ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -18,8 +22,15 @@ import { router } from './router/router';
     ViewTwoPageComponent,
     ViewThreePageComponent,
     NavBarComponent,
+    FormularioComponent,
   ],
-  imports: [BrowserModule, RouterModule.forRoot(router)],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(router),
+    NgxMaskModule.forRoot(),
+    IgxAvatarModule,
+    ReactiveFormsModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
